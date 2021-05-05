@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Avenir Next Demi';
+    src: url('/assets/font/AvenirNext-DemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    font-family: 'Avenir Next Demi' !important;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 !important;
+    padding: 0;
+}
+
+a {
+    color: unset;
+}
+
+.font-color1 {
+    color: #ffffff;
+}
+
+.font-color2 {
+    color: #abc3fc;
+}
+
+.font-color3 {
+    color: #345095
+}
+
+.font-color4 {
+    color: #7e8494
+}
+
+.font-color5 {
+    color: #242833;
+}
+
+.font-color6 {
+    color: #5d6373
+}
+
+textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+    box-shadow: inset 0 -1px 0 #ddd !important;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none !important;
+}
+
+/* on boarding CSS */
+
+.banner-img {
+    background-image: url('/assets/img/main-page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner-img p {
+    color: #4d6cbb;
+    font-size: 24px;
+    text-align: right;
+    width: 209px;
+    position: absolute;
+    right: 25px;
+    bottom: 118px;
+}
+
+.banner-img .arrow-btn {
+    height: 48px;
+    width: 48px;
+    border-radius: 20px;
+    transform: rotate(135deg);
+    position: absolute;
+    right: 58px;
+    bottom: 43px;
+    background-color: #ff5998;
+}
+
+.banner-img .arrow-btn img {
+    transform: rotate(-135deg);
+    height: 10px;
+}
+
+.main-container {
+    /* background-color: #4274eb; */
+}
+
+.intro {
+    height: 30vh;
+}
+
+.tab-container {
+    /* height: 70vh; */
+    height: 63vh;
+    background-color: #fff;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.name-cont {
+    padding: 17px 35px 15px;
+}
+
+.name-cont p:nth-child(1) {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.name-cont p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.progr-conteiner {
+    position: relative;
+    padding: 0 35px 35px
+}
+
+.up-btn {
+    position: absolute;
+    right: 35px;
+    top: 0;
+}
+
+.up-btn img {
+    height: 32px;
+    width: 32px;
+}
+
+.progress {
+    margin: 10px 0;
+    background-color: #00000036 !important;
+    border-radius: 20px !important;
+    height: 6px !important;
+}
+
+.progress-bar {
+    background-color: #ff6aa2 !important;
+    border-radius: 20px !important;
+}
+
+.progr-conteiner p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.progr-conteiner p span {
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.search-cont {
+    position: relative;
+    padding: 25px;
+}
+
+.search-cont img {
+    position: absolute;
+    z-index: 1;
+    height: 15px;
+    width: 15px;
+    top: 38px;
+    left: 38px;
+}
+
+.search-input {
+    border: unset;
+    background-color: #edf1fa;
+    height: 44px;
+    border-radius: 20px;
+    padding: 0 35px;
+}
+
+.search-input::placeholder {
+    color: #959fba;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-input:focus {
+    color: #959fba;
+    background-color: #edf1fa;
+}
+
+.tab-container nav {
+    /* padding: 0 25px 1px; */
+    padding: 0 0 1px;
+    border-bottom: 1px solid #d3d7e0;
+}
+
+.tab-container .nav-item {
+    /* width: 40%; */
+    flex: 1;
+    text-align: center;
+}
+
+.tab-container .nav {
+    justify-content: space-around;
+}
+
+.tab-container .nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+    padding: 0px 25px 1px;
+}
+
+.tab-container .nav-link {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tab-container .nav-tabs .nav-item.show .nav-link, .tab-container .nav-tabs .nav-link.active {
+    color: #345095 !important;
+    border-color: transparent transparent #5786f8;
+}
+
+.tab-container .nav-tabs .nav-link {
+    border: 4px solid transparent;
+}
+
+.tab-container .tab-content {
+    padding: 25px 25px 50px;
+    max-height: 45vh;
+    overflow: scroll;
+    height: auto;
+}
+
+.tab-container .box-con {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tab-container .folder-container {
+    height: 150px;
+    width: 150px;
+    background-color: #f5f7fc;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    padding: 20px;
+    position: relative;
+}
+
+.folder-container p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.no-files {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-left: -10px !important;
+}
+
+.folder-container p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.folder-container .options {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 18px;
+    width: 4px;
+}
+
+.folder-container .max3photos {
+    display: flex;
+    margin: 5px 0 0 10px;
+}
+
+.extraCount, .folder-container .max3photos img {
+    height: 28px;
+    width: 28px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-left: -10px;
+}
+
+.extraCount {
+    background-color: #959fba;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 1px;
+}
+
+.footer-tab {
+    height: 45px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0px;
+    padding-bottom: 5px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.footer-tab a {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-tab a div {
+    height: 100%;
+    width: 100%;
+}
+
+.upload-menu-container {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 1001;
+    bottom: 0px;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+.upload-menu-container.active {
+    height: 231px !important;
+    background-color: #ffffff !important;
+    transition: 0.5s ease;
+    border-radius: 130px 130px 0 0;
+}
+
+.blackShade {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    background-color: #000000;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+}
+
+.upload-menu-container p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px 0 0 0 !important;
+}
+
+.upload-menu-container img {
+    height: 60px;
+    width: 60px;
+}
+
+.upload-menu-container .scan-icon {
+    left: 50px;
+    top: 63px;
+    position: absolute;
+}
+
+.upload-menu-container .photo-icon {
+    margin: 35px auto 0;
+    width: 60px;
+}
+
+.upload-menu-container .upload-icon {
+    position: absolute;
+    right: 50px;
+    top: 63px;
+}
+
+.cancel-icon {
+    display: block;
+    margin: 37px auto 30px;
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.wrapper.for-home {
+    background-image: linear-gradient(to top, #4d6cbb 0%, #89aafa 100%);
+    /* background-color: #ffffff; */
+}
+
+.wrapper.for-home .wave {
+    background-color: #89aafa;
+}
+
+.wrapper.otherPages {
+    /* background-image: linear-gradient(to top, #ffffff 0%, #e6e6e6 100%); */
+    background-color: #ffffff;
+
+}
+
+.wrapper.otherPages .wave {
+    background-color: #e8efff;
+}
+
+.wrapper {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    /* top: 45px; */
+    top:225px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wave {
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 38%;
+    /* background: rgba(255, 255, 255, .75); */
+    animation: wave 25s infinite linear;
+}
+
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.LS-page .search-cont {
+    padding-top: 0px;
+}
+
+.LS-page .search-cont img {
+    top: 15px;
+}
+
+.pageHead {
+    font-size: 34px;
+    font-weight: 600;
+    padding: 17px 35px 15px;
+}
+
+.file-type {
+    /* height: 106px; */
+    overflow-y: scroll;
+    padding-left: 25px;
+    display: flex;
+}
+
+.file-type::-webkit-scrollbar {
+    width: 0px;
+}
+
+.type-icon {
+    margin: 0 12.5px;
+}
+
+.type-icon img {
+    height: 72px;
+    width: 72px;
+}
+
+.type-icon p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0 0 0 !important;
+}
+
+.file-list {
+    height: auto;
+    overflow: scroll;
+    padding: 30px 25px 50px;
+    height: 58vh;
+}
+
+.file-Container {
+    height: 52px;
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-Container img {
+    height: 52px;
+    width: 52px;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.fileInfo {
+    align-self: center;
+    margin: 0 0 0 15px;
+    justify-self: flex-start;
+    width: 80%;
+}
+
+.fileInfo p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fileInfo p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.file-Container .moreBtn {
+    height: 18px;
+    width: 4px;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.main-container.notification .poster {
+    height: 246px;
+    width: 305px;
+    margin: 86px auto 0;
+    display: block;
+}
+
+.no-content {
+    margin: 36px 35px;
+}
+
+.headingCotent {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.subHeadingcontent {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 8px 0 0 0 !important;
+    text-align: center;
+}
+
+.pageHead {
+    position: relative;
+}
+
+.pageHead img {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+
+.profile-picCotainer {
+    margin: 0 25px 25px;
+    position: relative;
+}
+
+.profile-picCotainer p:nth-child(2) {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    top: 15px;
+    left: 100px;
+}
+
+.profile-picCotainer p:nth-child(3) {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    top: 40px;
+    left: 100px;
+}
+
+.profile-picCotainer img {
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+}
+
+.storage-btn:hover, .bstorage-btn:focus, .storage-btn:active, .storage-btn.active, button.storage-btn {
+    color: #ff5998;
+    border-color: #ff5998;
+    outline: unset;
+    box-shadow: 0 0 0;
+    display: block;
+    width: 80%;
+    margin: 0 auto 35px;
+    border-radius: 20px;
+    height: 48px;
+}
+.storage-options{        
+    padding: 0 35px 50px;
+    height: 50vh;
+    overflow-x: auto;
+  }
+  .optionCotainer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 62px;
+      border-radius: 5px;
+      background-color: #f5f7fc;
+      height: auto;
+      padding: 0 16px;
+      margin: 0 0 15px 0;
+  }
+  .optionCotainer div{
+      width: 80%;
+      overflow:hidden;
+  }
+  .optionCotainer div p:nth-child(1){
+      font-size: 16px;
+  }
+  .optionCotainer div p:nth-child(2){
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .optionCotainer img{
+      height: 14px;
+      width: 8px;
+  }
+  .form-switch{
+      width: 52px !important;
+      height: 35px;
+  }
+  .form-switch .form-check-input{
+    width: 52px !important;
+    height: 30px;
+  }
+  .form-check-input:focus{
+      box-shadow: none;
+      outline: none;
+      border: none;
+  }
+
+@media (max-width: 320px) {
+    .name-cont p:nth-child(1) {
+        font-size: 1.5rem;
+    }
+    .progr-conteiner p {
+        font-size: 1.3rem;
+    }
+    .name-cont p:nth-child(2), .progr-conteiner p span {
+        font-size: 1rem;
+    }
+    .name-cont {
+        padding: 17px 35px 10px;
+    }
+    .progr-conteiner {
+        position: relative;
+        padding: 0 35px 25px
+    }
+    .tab-container nav {
+        padding: 0 10px 1px;
+    }
+    .tab-container .folder-container {
+        height: 125px;
+        width: 125px;
+        padding: 15px;
+    }
+    .folder-container p:nth-child(1) {
+        font-size: 1rem;
+    }
+    .folder-container .options {
+        height: 13px;
+        width: 3px;
+    }
+    .main-container.notification .poster {
+        margin: 10px auto 0;
+    }
+    .wrapper {
+        top: -40px;
+    }
+}
